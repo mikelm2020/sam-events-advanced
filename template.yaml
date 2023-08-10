@@ -93,7 +93,6 @@ Resources:
       Runtime: python3.9
       Layers:
         - !Ref HelpersLayer
-        - !Ref UuidLayer
       Environment:
         Variables:
           ORDER_TABLE: !Ref OrderTable
@@ -450,7 +449,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       CodeUri: delivery/
-      Handler: app.deliveryDLQHandler
+      Handler: app.delivery_dlq_handler
       Runtime: python3.9
       Layers:
         - !Ref HelpersLayer
