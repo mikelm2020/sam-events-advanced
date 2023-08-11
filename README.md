@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/mikelm2020/sam-eventbridge">
+  <a href="https://github.com/mikelm2020/sam-events-advanced">
     <img src="https://github.com/mikelm2020/video-streaming/blob/961be498851fc7b1e9d940550e7eb54ea3b2130f/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -284,16 +284,16 @@ My favorite resources used:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/mikelm2020/sam-eventbridge.svg?style=for-the-badge
-[contributors-url]: https://github.com/mikelm2020/sam-eventbridge/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/mikelm2020/sam-eventbridge.svg?style=for-the-badge
-[forks-url]: https://github.com/mikelm2020/sam-eventbridge/network/members
-[stars-shield]: https://img.shields.io/github/stars/mikelm2020/sam-eventbridge.svg?style=for-the-badge
-[stars-url]: https://github.com/mikelm2020/sam-eventbridge/stargazers
-[issues-shield]: https://img.shields.io/github/issues/mikelm2020/sam-eventbridge.svg?style=for-the-badge
-[issues-url]: https://github.com/mikelm2020/sam-eventbridge/issues
-[license-shield]: https://img.shields.io/github/license/mikelm2020/sam-eventbridge.svg?style=for-the-badge
-[license-url]: https://github.com/mikelm2020/sam-eventbridge/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/mikelm2020/sam-events-advanced.svg?style=for-the-badge
+[contributors-url]: https://github.com/mikelm2020/sam-events-advanced/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/mikelm2020/sam-events-advanced.svg?style=for-the-badge
+[forks-url]: https://github.com/mikelm2020/sam-events-advanced/network/members
+[stars-shield]: https://img.shields.io/github/stars/mikelm2020/sam-events-advanced.svg?style=for-the-badge
+[stars-url]: https://github.com/mikelm2020/sam-events-advanced/stargazers
+[issues-shield]: https://img.shields.io/github/issues/mikelm2020/sam-events-advanced.svg?style=for-the-badge
+[issues-url]: https://github.com/mikelm2020/sam-events-advanced/issues
+[license-shield]: https://img.shields.io/github/license/mikelm2020/sam-events-advanced.svg?style=for-the-badge
+[license-url]: https://github.com/mikelm2020/sam-events-advanced/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
 [linkedin]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
