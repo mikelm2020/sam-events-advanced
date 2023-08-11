@@ -121,3 +121,4 @@ helpers-layer/nodejs/node_modules/locationHandler/node_modules/*
 uuid-layer/nodejs/package-lock.json
 uuid-layer/nodejs/node_modules/.package-lock.json
 uuid-layer/nodejs/node_modules/*
+*.drawio.png
