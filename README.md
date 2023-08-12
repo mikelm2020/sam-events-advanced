@@ -73,6 +73,26 @@ This project is a demo application of an ecommerce platform with the followings 
 This project is build with a event-driven architecture, in the next table swhow the events take part:
 [events table](event-table.md).
 
+## Screenshots
+
+Some screenshots of the demo:
+
+### Custom Event Bus with the first ten events when creating to the order
+
+![S1](./screenshots/S1.png)
+
+### Webhook for simulate the arriival to Logistic's Service
+
+![S2](./screenshots/S2.png)
+
+### Confirmation of the manual event in Amazon Event Bridge for simulate the shipment of Logistic
+
+![S3](./screenshots/S3.png)
+
+### The last events after the confirmation of Logistic
+
+![S4](./screenshots/S4.png)
+
 ## Detail information for each service
 
 ### Inventory service
