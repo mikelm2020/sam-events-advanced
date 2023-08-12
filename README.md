@@ -175,7 +175,7 @@ The Payment service fails with a probability passed to the Lambda `PaymentFuncti
 
 ## Architecture
 
-![Diagram](./diagrams/diagram.png)
+![Diagram](./diagrams/architecture.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
