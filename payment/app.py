@@ -23,7 +23,7 @@ def lambda_handler(event, context):
         order = event.get("detail")
 
         if event_type == "DeliveryEstimated":
-            total_price = order["item"]["price"] + order["delivery"]["price"]
+            total_price = float(order["item"]["price"]["N"]) + order["delivery"]["price"]
             payment_result = make_payment(total_price)
             process_result(
                 payment_result,

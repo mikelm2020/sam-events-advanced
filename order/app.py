@@ -98,16 +98,16 @@ def store_order(orderStatus, order):
         "orderId": order["orderId"],
         "orderStatus": orderStatus,
         "itemId": order["itemId"],
-        "itemPrice": order["item"]["price"],
+        "itemPrice": order["item"]["price"]["N"],
         "deliveryPrice": order["delivery"]["price"],
         "totalPrice": order["payment"]["amount"],
         "paymentId": order["payment"]["paymentId"],
-        "deliveryAddress": order["customer"]["address"],
+        "deliveryAddress": order["customer"]["address"]["S"],
         "orderDate": orderDate,
         "updateDate": orderDate,
     }
 
-    params = {"Statement": f'INSERT INTO "{ORDER_TABLE}" VALUE {json.dumps(db_order)}'}
+    params = {"Statement": f'INSERT INTO \"{ORDER_TABLE}\" VALUE {db_order}'}
 
     execute_statement(params)
 

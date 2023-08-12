@@ -35,7 +35,7 @@ def lambda_handler(event, context):
                         EVENT_SOURCE,
                     )
                 else:
-                    print(f"Customer with ID '{customer_id}' not found.")
+                    print(f"Customer with ID {customer_id} not found.")
             else:
                 print("No customerId provided in the event.")
         else:
@@ -47,4 +47,5 @@ def describe_customer(customer_id):
     params = {
         "Statement": f"SELECT * FROM \"{CUSTOMER_TABLE}\" WHERE customerId = '{customer_id}'"
     }
-    execute_statement(params)
+
+    return execute_statement(params)

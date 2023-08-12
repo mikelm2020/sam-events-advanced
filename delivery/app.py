@@ -20,6 +20,7 @@ START_ADDRESS = "60 Holborn Viaduct, London EC1A 2FD, UK"
 
 # Lambda Handler
 def lambda_handler(event, context):
+    global start_address_place
     if start_address_place is None:
         start_address_place = get_place_from_address(START_ADDRESS, PLACE_INDEX)
 
@@ -30,7 +31,7 @@ def lambda_handler(event, context):
         order = event.get("detail")
 
         if event_type == "CustomerDescribed":
-            address = order.get("customer").get("address")
+            address = order.get("customer").get("address").get("S")
             if address:
                 delivery_result = estimate_delivery(address)
                 process_result(
@@ -47,7 +48,7 @@ def lambda_handler(event, context):
         elif event_type == "ItemRemoved":
             customer_id = order.get("customerId")
             order_id = order.get("orderId")
-            address = order.get("customer").get("address")
+            address = order.get("customer").get("address").get("S")
             if customer_id and order_id and address:
                 mark_delivery_result = mark_delivery_as_started(
                     customer_id, order_id, address
@@ -124,8 +125,8 @@ def delivery_dlq_handler(event, context):
 
 # Function to estimate delivery
 def estimate_delivery(address):
-    route_summary = get_route_summary_for(address)
-    return [route_summary]
+    delivery = get_route_summary_for(address)
+    return [delivery]
 
 
 # Function to mark delivery as started
